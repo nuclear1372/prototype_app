@@ -5,7 +5,6 @@ class TalksController < ApplicationController
   end
   
   def create
-    binding.pry
     request = AlexaRubykit::build_request(params)
     response = AlexaRubykit::Response.new
     response.add_speech("こんにちは、ケーク·タイムへようこそ。あなたの誕生日を教えてください。")
